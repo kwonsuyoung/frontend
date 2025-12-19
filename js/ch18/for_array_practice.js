@@ -1,7 +1,47 @@
-const arr = [1, 2, 3, 4, 5];
-const newArr = [];
+//01 for문을 사용해서 배열의 모든 요소를 한 줄씩 출력하세요.
+const fruits = ['apple', 'banana', 'orange', 'grape'];
 
-for (let i = arr.length -1; i >= 0; i--){
-    newArr.push(arr[i]);
-}
-console.log(newArr);
+
+
+//for문과 length를 사용해서 배열의 모든 숫자를 출력하세요.
+const numbers = [10, 20, 30, 40, 50];
+
+
+
+//for문을 사용해서 짝수만 출력하세요.
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+
+
+
+//for문을 사용해서 "영희"가 몇 번 등장하는지 출력하세요.
+const names = ["민수", "영희", "철수", "지수", "영희"];
+
+
+// for문을 사용해서 배열 안의 모든 값의 합을 구해 출력하세요.
+const scores = [70, 80, 90, 100];
+
+
+
+
+// for문으로 총합을 구한 후 평균값을 출력하세요.
+const ages = [20, 25, 30, 35];
+
+
+
+// for문을 사용해서 각 숫자에 2를 곱한 값을 새 배열에 저장하세요.
+const numbers2 = [1, 2, 3, 4, 5];
+
+
+
+// 각 단어의 글자 수를 담은 배열을 만드세요.
+const words = ["hello", "js", "array", "loop"];
+
+
+
+// for문을 사용해서 배열 안의 최댓값을 출력하세요.
+const numbers3 = [3, 17, 2, 8, 25, 10];
+
+
+// for문을 사용해서 배열을 역순으로 저장한 새 배열을 만드세요.
+const arr = [1, 2, 3, 4, 5];
