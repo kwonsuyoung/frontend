@@ -11,10 +11,10 @@ const changeNum = (n) => {
 }
 
 let num = 10;
-console.log('num:', num);
+console.log('before changeNum num:', num);
 // changeNum함수 호출하면서 num이 가지고 있는 값 전달
 changeNum(num);
-console.log('num:', num);
+console.log('after changeNum num:', num);
 
 // num에는 10이라는 일반값을 가지고 있음
 // 함수 chageNum을 호출할 때 num과 n은 다른 공간임. num의 값을 복사해 n의 위치에 가져다 놓음
@@ -36,8 +36,8 @@ const changeBoxNum = (boxNum) => {
 let box = {
     num: 10
 };
-console.log('box.num:', box.num);
+console.log('before changeBoxNum box.num:', box.num);
 changeBoxNum(box);
-console.log('box.num:', box.num);
+console.log('after changeBoxNum box.num:', box.num);
 const box2 = changeBoxNum(box);
 console.log('box2.num:', box2.num);
