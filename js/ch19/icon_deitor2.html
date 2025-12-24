@@ -21,11 +21,11 @@
             return node;
         }
 
-        function createIconEditor(target, nx, ny){
-            const $inputColor = makeElement('input', {type:'color'});
+        function createIconEditor(target, nx, ny) {
+            const $inputColor = makeElement('input', { type: 'color' });
             target.append($inputColor);
 
-            const $inputColorClear = makeElement('input',{type:'button', value:'Clear'});
+            const $inputColorClear = makeElement('input', { type: 'button', value: 'Clear' });
             target.append($inputColorClear);
 
             const $table = makeElement('table');
@@ -33,25 +33,45 @@
             //$table.style.borderCollapse = 'collapse';
             $table.style.marginTop = '10px';
 
-            for(let y=0; y<ny; y++){//줄담당
+            for (let y = 0; y < ny; y++) {//줄담당
                 const $tr = makeElement('tr');
                 $table.append($tr);
-                for(let x=0; x<nx; x++){//칸담당
+                for (let x = 0; x < nx; x++) {//칸담당
                     const $td = makeElement('td');
                     $tr.append($td);
                     $td.style.width = $td.style.height = '15px';
                     $td.style.border = '1px solid gray';
 
-                    // $td.addEventListener('click', (e)=> {
-                    //     $td.style.backgroundColor = $inputColor;
-                    // });
+                    $td.addEventListener('click', e => {
+                        // if(e.target.style.backgroundColor !== ''){
+                        //     e.target.style.backgroundColor = '';
+                        // }else{
+                        //     e.target.style.backgroundColor = $inputColor.value;
+                        // }  
+                        e.target.style.backgroundColor = e.target.style.backgroundColor ? '' : $inputColor.value;
+                    });
                 }
             }
+            $inputColorClear.addEventListener('click', () => {                
+                const $allTd = document.querySelectorAll('td');
+                // $allTd.forEach(item => {
+                //     item.style.backgroundColor = '';
+                // });
+                // //////////////////////////////////////////
+                // for (let i=0;i<$allTd.length;i++){
+                //     $allTd[i].style.backgroundColor = '';
+                // }
+                //////////////////////////////////////////
+                for(const item of $allTd){
+                    //item은 td의 엘리먼트 주솟값이 담긴다
+                    item.style.backgroundColor = '';
+                }
+            });
         }
-        
+
         const $editor = document.querySelector('#editor');
         createIconEditor($editor, 20, 20);
-</script>
+    </script>
 </body>
 
 </html>
