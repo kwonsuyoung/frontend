@@ -1,12 +1,35 @@
-<a href="https://www.gitanimals.org/en_US?utm_medium=image&utm_source=k78sy&utm_content=farm" target="_blank">
-<img
-  src="https://render.gitanimals.org/farms/k78sy"
-  width="600"
-  height="300"
-/>
-</a>
+<div align="center">
+  <h2>🐥 My Gitanimals Farm</h2>
+  <a href="https://www.gitanimals.org/en_US?utm_medium=image&utm_source=k78sy&utm_content=farm">
+    <img src="https://render.gitanimals.org/farms/k78sy" width="600" height="300" />
+  </a>
+</div>
 
+[![GitAnimals Farm](https://render.gitanimals.org/farms/k78sy)](https://www.gitanimals.org/en_US?utm_medium=image&utm_source=k78sy&utm_content=farm)
 
+<div align="center">
+  <h2>🐥 My Gitanimals Farm</h2>
+  
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fk78sy%2Ffrontend-study&count_bg=%23007ACC&title_bg=%23555555&title=Visitors" />
+  
+  <br><br>
+
+  <a href="https://www.gitanimals.org/en_US?utm_medium=image&utm_source=k78sy&utm_content=farm">
+    <img src="https://render.gitanimals.org/farms/k78sy" width="600" height="300" />
+  </a>
+</div>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=k78sy&show_icons=true&theme=radical" />
+  
+  <br>
+
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=k78sy&layout=compact&theme=radical" />
+</div>
+
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=안녕하세요!+프론트엔드+개발자+k78sy입니다;열심히+공부하고+기록합니다;지켜봐+주세요!+🐥" alt="Typing SVG" />
+</div>
 
 ### 🛠 Tech Stack
 
