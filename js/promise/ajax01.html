@@ -10,10 +10,13 @@
 <body>
     <div id="container"></div>
     <script>
-        fetch('https://picsum.photos/v2/list')
+        fetch('https://picsum.photos/v2/list') // 함수들의 호출부분
             .then(res => res.json()) // json() 문자열인 json을 객체로 만든것. 역직렬화
             .then(json => procItems(json))//json타입은 배열, 안에 {}는 객체
-            .catch(err => console.log(err));
+            .catch(err => {
+                alert('에러 발생!');
+                console.log(err);
+            });
 
             const procItems = list =>{
                 const $container = document.querySelector("#container");
