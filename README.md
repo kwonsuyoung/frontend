@@ -20,15 +20,29 @@
 </div>
 
 <div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=안녕하세요!+프론트엔드+개발자+k78sy입니다;열심히+공부하고+기록합니다;지켜봐+주세요!+🐥" alt="Typing SVG" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fk78sy%2Ffrontend-study&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitors&edge_flat=false" />
+  
+  <br><br>
+  
   <img src="https://github-readme-stats.vercel.app/api?username=k78sy&show_icons=true&theme=radical" />
   
   <br>
-
+  
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=k78sy&layout=compact&theme=radical" />
 </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=안녕하세요!+프론트엔드+개발자+k78sy입니다;열심히+공부하고+기록합니다;지켜봐+주세요!+🐥" alt="Typing SVG" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=k78sy&repo=frontend-study&theme=radical" alt="Repo Pin" />
+  
+  <br>
+  
+  <img src="https://wttr.in/Daegu_3pt_lang=ko.png" width="300" />
 </div>
 
 ### 🛠 Tech Stack
