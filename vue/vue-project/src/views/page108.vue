@@ -6,7 +6,7 @@ const test = () => alert('테스트');
 <template>
 <h3>page 108</h3>
 <button v-on:click="pop('Hello')">Hello</button>
-<button @click="pop('Hello')">안녕</button>
+<button @click="pop('안녕안녕안녕')">안녕</button>
 
 <!-- 연결된 함수가 파라미터가 없다면 함수 이름만 적어도 된다 -->
 <button @click="test">Test</button>

@@ -34,6 +34,26 @@ const router = createRouter({
       meta: { isMenu: true },
     },
     {
+      path: '/page114',
+      component: () => import('@/views/page114.vue'),
+      meta: { isMenu: true },
+    },
+    {
+      path: '/page118',
+      component: () => import('@/views/page118.vue'),
+      meta: { isMenu: true },
+    },
+    {
+      path: '/page123',
+      component: () => import('@/views/page123.vue'),
+      meta: { isMenu: true },
+    },
+    {
+      path: '/page125',
+      component: () => import('@/views/page125.vue'),
+      meta: { isMenu: true },
+    },
+    {
       path: '/mission01',
       component: () => import('@/views/mission01.vue'),
       meta: { isMenu: true },

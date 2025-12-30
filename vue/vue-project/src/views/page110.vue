@@ -4,10 +4,13 @@ let pushUp = 0;
 let sitUp = 0;
 
 const refPushUp = ref(0);
+//ref를 호출할 때 초기값을 작성. 
+// 초기값 0을 가지고 있는 반응형 상태 객체 주소값이 넘어간다.
 const refSitUp = ref(0);
 
 const increasePushUp = () => {
     console.log(`pushUp: ${++pushUp} , refPushUp: ${++refPushUp.value}`)
+    //ref 반응형 상태 객체의 값을 변경할 때는 value 속성값을 변경하면 된다.
 };
 const increaseSitUp = () => {
     console.log(`sitUp:${++sitUp}, refSithUp: ${++refSitUp.value}`)
@@ -25,8 +28,8 @@ const increaseSitUp = () => {
     <li id="sitUp">윗몸 일으키기: {{ sitUp }}</li>
 </ul>
 <ul>
-    <li id="pushUp">ref 팔 굽혀 펴기: {{ refPushUp }}</li>
-    <li id="sitUp">ref 윗몸 일으키기: {{ refSitUp }}</li>
+    <li id="refpushUp">ref 팔 굽혀 펴기: {{ refPushUp }}</li>
+    <li id="refsitUp">ref 윗몸 일으키기: {{ refSitUp }}</li>
 </ul>
 <br>
 <hr>
