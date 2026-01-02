@@ -23,12 +23,15 @@ for (let i = 1; i <= 100; i++){
     arr.push(obj)
 }
 
+console.log(arr);
+
 // find 이용하지 않고 id값이 20인 객체의 주소값을 찾아주세요
 let result = null;
 
 for (let i = 0; i < arr.length; i++){
     if (arr[i].id === 20) {
         result = arr[i];
+        break;
     }
 }
 
