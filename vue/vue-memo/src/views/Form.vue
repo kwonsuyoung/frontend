@@ -13,21 +13,23 @@ const state = reactive({
     }
 });
 const submit = () => {
-    storageService.addItem(state.memo);
-    window.alert("저장하였습니다.");
+    if (route.params.id) {
+        storageService.setItem(state.memo);
+        window.alert("수정하였습니다.");
+    } else {
+        storageService.addItem(state.memo);
+        window.alert("저장하였습니다.");
+    }
     // 라우팅 처리 (path:'/')로 주소값 이동 (화면 전환)
-    router.push({
-        path:'/'
-    })
+    router.push({path:'/'})
 }
 onMounted(() => {
     if (route.params.id) {// id: router/index.js에서 id값을 사용하니
-        const id = Number(route.params.id); //받아온 문자열을 숫자로 바꿈
+        const id = Number(route.params.id); //받아온 문자열(주소창에 쓰이는 건 모두 문자열)을 숫자로 바꿈
         //route.params.XX route 쓰는 약속
         state.memo = storageService.getItem(id);
     }
 })
-
 </script>
 
 <template>
@@ -40,7 +42,11 @@ onMounted(() => {
         <label for="content" class="form-label">내용</label>
         <textarea id="content" v-model="state.memo.content" class="form-control p-3"></textarea>
     </div>
-    <button class="btn btn-primary w-100 py-3">저장</button>
+    <button class="btn btn-primary w-100 py-3">
+        <span v-if="route.params.id">수정</span>
+        <span v-else>저장</span>
+        <!-- {{ route.params.id ? '수정' : '저장' }} -->
+    </button>
 </form>
 
 </template>
